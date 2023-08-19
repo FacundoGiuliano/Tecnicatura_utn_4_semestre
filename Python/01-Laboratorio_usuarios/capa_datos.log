@@ -1,0 +1,20 @@
+08:27:20 PM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+08:27:20 PM:DEBUG [conexion.py:36] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7f5907607ee0>
+08:27:20 PM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f5907766980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:27:20 PM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+08:27:20 PM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+08:27:20 PM:DEBUG [cursor_del_pool.py:20] Ocurrio una excepcion: 'module' object is not callable
+08:27:20 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f5907766980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+08:32:22 PM:DEBUG [conexion.py:36] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7f75ae4cbeb0>
+08:32:22 PM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f75ae62a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+08:32:22 PM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+08:32:22 PM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+08:32:22 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f75ae62a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+08:32:22 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+08:32:29 PM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion. Hasta pronto !
+08:34:18 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+08:34:18 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+08:34:31 PM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion. Hasta pronto !
