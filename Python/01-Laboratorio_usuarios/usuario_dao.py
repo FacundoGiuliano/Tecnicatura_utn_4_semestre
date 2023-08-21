@@ -53,7 +53,7 @@ if __name__ == '__main__':
     # Actualizar un usuario
     usuario = Usuario(id_usuario=1, username='Juan', password='1213')
     usuario_actualizado = UsuarioDAO.actualizar(usuario)
-    log.debug(f'Personas actualizadas: {usuario_actualizado}')
+    log.debug(f'Usuario actualizado: {usuario_actualizado}')
 
     # Insertar un registro
     usuario = Usuario(username='Mateo111', password='36554')

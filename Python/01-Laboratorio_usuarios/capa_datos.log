@@ -18,3 +18,97 @@
 08:34:18 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
 08:34:18 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
 08:34:31 PM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion. Hasta pronto !
+10:46:22 AM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+10:46:22 AM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+10:46:48 AM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion. Hasta pronto !
+11:06:08 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:06:08 AM:DEBUG [conexion.py:36] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7fcec3c73730>
+11:06:08 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:06:08 AM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+11:06:08 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:06:08 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:06:08 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:06:08 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:06:08 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+11:06:46 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:06:46 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:06:46 AM:DEBUG [usuario_dao.py:26] Usuario a insertar: Usuario: None mlara 567
+11:06:46 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:06:46 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:06:46 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:06:46 AM:INFO [menu_app_usuario.py:23] Usuario insertado: 1
+11:06:55 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:06:55 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:06:55 AM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+11:06:55 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:06:55 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:06:55 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:06:55 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:06:55 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+11:06:55 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+11:09:13 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:09:13 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:09:13 AM:DEBUG [usuario_dao.py:34] Usuario a actualizr: Usuario: 2 karlagomez 456
+11:09:13 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:09:13 AM:DEBUG [cursor_del_pool.py:20] Ocurrio una excepcion: maximum recursion depth exceeded
+11:09:13 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7fcec3dea980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:24:02 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:24:02 AM:DEBUG [conexion.py:36] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7f0a944c18a0>
+11:24:02 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f0a94632980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:24:02 AM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+11:24:02 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:24:02 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:24:02 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f0a94632980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:24:02 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:24:02 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+11:24:02 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+11:24:19 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:24:19 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f0a94632980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:24:19 AM:DEBUG [usuario_dao.py:34] Usuario a actualizr: Usuario: 2 karlagomez 456
+11:24:19 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:24:19 AM:DEBUG [cursor_del_pool.py:20] Ocurrio una excepcion: maximum recursion depth exceeded
+11:24:19 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f0a94632980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:15 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:26:15 AM:DEBUG [conexion.py:36] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7f05d5f73040>
+11:26:15 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:15 AM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+11:26:15 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:26:15 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:26:15 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:15 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:26:15 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+11:26:15 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+11:26:26 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:26:26 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:26 AM:DEBUG [usuario_dao.py:34] Usuario a actualizr: Usuario: 2 karlagomez 456
+11:26:26 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:26:26 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:26:26 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:26 AM:INFO [menu_app_usuario.py:30] Usuario actualizado: 1
+11:26:32 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:26:32 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:32 AM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+11:26:32 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:26:32 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:26:32 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:26:32 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:26:32 AM:INFO [menu_app_usuario.py:17] Usuario: 2 karlagomez 456
+11:26:32 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+11:27:49 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:27:49 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:27:49 AM:DEBUG [usuario_dao.py:42] Usuario a eliminar: Usuario: 3 None None
+11:27:49 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:27:49 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:27:49 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:27:49 AM:INFO [menu_app_usuario.py:35] Usuario eliminado: 1
+11:27:53 AM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+11:27:53 AM:DEBUG [conexion.py:18] Conexion obtenida del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:27:53 AM:DEBUG [usuario_dao.py:14] Seleccionando usuarios
+11:27:53 AM:DEBUG [cursor_del_pool.py:17] Se ejecuta el metodo exit
+11:27:53 AM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion
+11:27:53 AM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x7f05d611a980; dsn: 'user=prueba password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:27:53 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:27:53 AM:INFO [menu_app_usuario.py:17] Usuario: 2 karlagomez 456
+11:28:06 AM:INFO [menu_app_usuario.py:37] Salimos de la aplicacion. Hasta pronto !
+11:28:30 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+11:28:30 AM:INFO [menu_app_usuario.py:17] Usuario: 2 karlagomez 456

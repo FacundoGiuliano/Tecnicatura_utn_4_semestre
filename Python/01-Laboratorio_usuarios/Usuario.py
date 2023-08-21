@@ -9,7 +9,7 @@ class Usuario:
     
     @property
     def id_usuario(self):
-        return self.id_usuario
+        return self._id_usuario
     
     @id_usuario.setter
     def id_usuario(self, id_usuario):
