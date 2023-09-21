@@ -125,10 +125,34 @@ public class EstudianteDAO {
         return false;
     }
 
+    public boolean eliminarEstudiante(Estudiante estudiante){
+        PreparedStatement ps;
+        Connection con = getConnection();
+        String sql = "DELETE FROM estudiantes2022 WHERE idestudiantes2022=?";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setInt(1,estudiante.getIdEstudiante());
+            ps.execute();
+            return true;
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Error al eliminar estudiante: "+e.getMessage());
+        }
+        finally {
+            try {
+                con.close();
+            } catch (Exception e) {
+                // TODO: handle exception
+                System.out.println("Error al cerrar la conexion: "+e.getMessage());
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         var estudianteDAO = new EstudianteDAO();
         // Modificar estudiante
-        var estudianteModificado = new Estudiante(1, "Juan Carlos", "Juarez", "356854", "juan@mail.com");
+        /*var estudianteModificado = new Estudiante(1, "Juan Carlos", "Juarez", "356854", "juan@mail.com");
         var modificado = estudianteDAO.modificarEstudiante(estudianteModificado);
         if(modificado)
             System.out.println("Estudiante modificado: "+estudianteModificado);
@@ -143,6 +167,14 @@ public class EstudianteDAO {
         else
             System.out.println("No se ha agregado estudiantes: "+nuevoEstudiante);*/
 
+        // Eliminar estudiante con id 3
+        var estudianteEliminar = new Estudiante(4, null, null, null, null);
+        var eliminado = estudianteDAO.eliminarEstudiante(estudianteEliminar);
+        if(eliminado)
+            System.out.println("Estudiante eliminado: "+estudianteEliminar);
+        else
+            System.out.println("No se elimino estudiante: "+estudianteEliminar);
+        
         // Listar los estudiantes
         System.out.println("Listado de estudiantes: ");
         List<Estudiante> estudiantes = estudianteDAO.listarEstudiantes();
