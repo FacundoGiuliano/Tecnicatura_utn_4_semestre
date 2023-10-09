@@ -1,12 +1,12 @@
 const shopContent = document.getElementById("shopContent");
-const cart = []; // EL carrito es un array vacio
+const cart = []; //Este es nuestro carrito, un array vacío
 
-productos.forEach((product) => {
+productos.forEach((product) =>{
     const content = document.createElement("div");
     content.innerHTML = `
-    <img src= "${product.img}">
+    <img src="${product.img}" >
     <h3>${product.productName}</h3>
-    <p>${product.price} $</p>
+    <p>$ ${product.price}</p>
     `;
     shopContent.append(content);
 
@@ -16,22 +16,24 @@ productos.forEach((product) => {
     content.append(buyButton);
 
     buyButton.addEventListener("click", () => {
-        const repeat = cart.some((repeatProduct) => repeatProduct.id === product.id);
+        const repeat = cart.some((repeatProduct)=> repeatProduct.id === product.id );
 
-        if(repeat){
+       if(repeat){
             cart.map((prod)=> {
-                if(prod.id === product.id){
-                    prod.quanty++;
+                if(prod.id === product.id) {
+                    prod.quantity++;
+                    displayCartCounter();
                 }
             });
-        } else { 
+        } else {
             cart.push({
                 id: product.id,
                 productName: product.productName,
                 price: product.price,
-                quanty: product.quanty,
+                quantity: product.quantity,
                 img: product.img,
             });
+            displayCartCounter();
         }
-    })
+    });
 });
