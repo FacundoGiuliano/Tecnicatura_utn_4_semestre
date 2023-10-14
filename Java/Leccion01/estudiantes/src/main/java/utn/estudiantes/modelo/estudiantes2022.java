@@ -15,10 +15,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 
-public class Estudiante {
+public class estudiantes2022 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idEstudiante;
+    private Integer idestudiantes2022;
     private String nombre;
     private String apellido;
     private String telefono;
