@@ -1,12 +1,11 @@
 package utn.tienda_libros.vista;
 
-import javax.swing.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
-
 import utn.tienda_libros.servicio.LibroServicio;
 
-public class LibroForm extends JFrame{
+import javax.swing.*;
+
+public class LibroForm extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
 
