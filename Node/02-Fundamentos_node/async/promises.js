@@ -40,3 +40,4 @@ hola('Ariel')
         console.log('Ha habido un error: ');
         console.log(error);
     })
+    
